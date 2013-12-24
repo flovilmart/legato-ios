@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A36C53F186A066800783520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36C53E186A066800783520 /* Foundation.framework */; };
+		4A36C544186A066800783520 /* Legato.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A36C543186A066800783520 /* Legato.h */; };
+		4A36C546186A066800783520 /* Legato.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A36C545186A066800783520 /* Legato.m */; };
+		4A36C54D186A066800783520 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36C54C186A066800783520 /* XCTest.framework */; };
+		4A36C54E186A066800783520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36C53E186A066800783520 /* Foundation.framework */; };
+		4A36C550186A066800783520 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36C54F186A066800783520 /* UIKit.framework */; };
+		4A36C553186A066800783520 /* libLegato.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36C53B186A066800783520 /* libLegato.a */; };
+		4A36C559186A066800783520 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A36C557186A066800783520 /* InfoPlist.strings */; };
+		4A36C55B186A066800783520 /* LegatoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A36C55A186A066800783520 /* LegatoTests.m */; };
+		4A36C569186A14BD00783520 /* LGCard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A36C564186A06DC00783520 /* LGCard.h */; };
+		4A36C56A186A14D100783520 /* LGCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A36C565186A06DC00783520 /* LGCard.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A36C551186A066800783520 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A36C533186A066800783520 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A36C53A186A066800783520;
+			remoteInfo = Legato;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A36C539186A066800783520 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				4A36C544186A066800783520 /* Legato.h in CopyFiles */,
+				4A36C569186A14BD00783520 /* LGCard.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A36C53B186A066800783520 /* libLegato.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLegato.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A36C53E186A066800783520 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A36C542186A066800783520 /* Legato-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Legato-Prefix.pch"; sourceTree = "<group>"; };
+		4A36C543186A066800783520 /* Legato.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Legato.h; sourceTree = "<group>"; };
+		4A36C545186A066800783520 /* Legato.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Legato.m; sourceTree = "<group>"; };
+		4A36C54B186A066800783520 /* LegatoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegatoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A36C54C186A066800783520 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4A36C54F186A066800783520 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4A36C556186A066800783520 /* LegatoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LegatoTests-Info.plist"; sourceTree = "<group>"; };
+		4A36C558186A066800783520 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A36C55A186A066800783520 /* LegatoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LegatoTests.m; sourceTree = "<group>"; };
+		4A36C564186A06DC00783520 /* LGCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCard.h; sourceTree = "<group>"; };
+		4A36C565186A06DC00783520 /* LGCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCard.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A36C538186A066800783520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A36C53F186A066800783520 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A36C548186A066800783520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A36C54D186A066800783520 /* XCTest.framework in Frameworks */,
+				4A36C553186A066800783520 /* libLegato.a in Frameworks */,
+				4A36C550186A066800783520 /* UIKit.framework in Frameworks */,
+				4A36C54E186A066800783520 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A36C532186A066800783520 = {
+			isa = PBXGroup;
+			children = (
+				4A36C540186A066800783520 /* Legato */,
+				4A36C554186A066800783520 /* LegatoTests */,
+				4A36C53D186A066800783520 /* Frameworks */,
+				4A36C53C186A066800783520 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A36C53C186A066800783520 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A36C53B186A066800783520 /* libLegato.a */,
+				4A36C54B186A066800783520 /* LegatoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A36C53D186A066800783520 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A36C53E186A066800783520 /* Foundation.framework */,
+				4A36C54C186A066800783520 /* XCTest.framework */,
+				4A36C54F186A066800783520 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A36C540186A066800783520 /* Legato */ = {
+			isa = PBXGroup;
+			children = (
+				4A36C564186A06DC00783520 /* LGCard.h */,
+				4A36C565186A06DC00783520 /* LGCard.m */,
+				4A36C543186A066800783520 /* Legato.h */,
+				4A36C545186A066800783520 /* Legato.m */,
+				4A36C541186A066800783520 /* Supporting Files */,
+			);
+			path = Legato;
+			sourceTree = "<group>";
+		};
+		4A36C541186A066800783520 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A36C542186A066800783520 /* Legato-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A36C554186A066800783520 /* LegatoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A36C55A186A066800783520 /* LegatoTests.m */,
+				4A36C555186A066800783520 /* Supporting Files */,
+			);
+			path = LegatoTests;
+			sourceTree = "<group>";
+		};
+		4A36C555186A066800783520 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A36C556186A066800783520 /* LegatoTests-Info.plist */,
+				4A36C557186A066800783520 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A36C53A186A066800783520 /* Legato */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A36C55E186A066800783520 /* Build configuration list for PBXNativeTarget "Legato" */;
+			buildPhases = (
+				4A36C537186A066800783520 /* Sources */,
+				4A36C538186A066800783520 /* Frameworks */,
+				4A36C539186A066800783520 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Legato;
+			productName = Legato;
+			productReference = 4A36C53B186A066800783520 /* libLegato.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4A36C54A186A066800783520 /* LegatoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A36C561186A066800783520 /* Build configuration list for PBXNativeTarget "LegatoTests" */;
+			buildPhases = (
+				4A36C547186A066800783520 /* Sources */,
+				4A36C548186A066800783520 /* Frameworks */,
+				4A36C549186A066800783520 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A36C552186A066800783520 /* PBXTargetDependency */,
+			);
+			name = LegatoTests;
+			productName = LegatoTests;
+			productReference = 4A36C54B186A066800783520 /* LegatoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A36C533186A066800783520 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Soevolved;
+			};
+			buildConfigurationList = 4A36C536186A066800783520 /* Build configuration list for PBXProject "Legato" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A36C532186A066800783520;
+			productRefGroup = 4A36C53C186A066800783520 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A36C53A186A066800783520 /* Legato */,
+				4A36C54A186A066800783520 /* LegatoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A36C549186A066800783520 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A36C559186A066800783520 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A36C537186A066800783520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A36C56A186A14D100783520 /* LGCard.m in Sources */,
+				4A36C546186A066800783520 /* Legato.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A36C547186A066800783520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A36C55B186A066800783520 /* LegatoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A36C552186A066800783520 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A36C53A186A066800783520 /* Legato */;
+			targetProxy = 4A36C551186A066800783520 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A36C557186A066800783520 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A36C558186A066800783520 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A36C55C186A066800783520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4A36C55D186A066800783520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A36C55F186A066800783520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Legato.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Legato/Legato-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4A36C560186A066800783520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Legato.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Legato/Legato-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4A36C562186A066800783520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Legato/Legato-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LegatoTests/LegatoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4A36C563186A066800783520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Legato/Legato-Prefix.pch";
+				INFOPLIST_FILE = "LegatoTests/LegatoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A36C536186A066800783520 /* Build configuration list for PBXProject "Legato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A36C55C186A066800783520 /* Debug */,
+				4A36C55D186A066800783520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A36C55E186A066800783520 /* Build configuration list for PBXNativeTarget "Legato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A36C55F186A066800783520 /* Debug */,
+				4A36C560186A066800783520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4A36C561186A066800783520 /* Build configuration list for PBXNativeTarget "LegatoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A36C562186A066800783520 /* Debug */,
+				4A36C563186A066800783520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A36C533186A066800783520 /* Project object */;
+}
