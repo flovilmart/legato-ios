@@ -99,13 +99,12 @@ static char mn_waitingForAsynchronousTestKey;
 - (void) testValidCard
 {
     [Legato enableProduction];
-    LGCard * card = [[LGCard alloc] initWithNumber:@"5100000010001004" expiryMonth:2 expiryYear:2014 securityCode:123];
-    
+    LGCard * card = [[LGCard alloc] initWithNumber:@"4030000010001234" expiryMonth:10 expiryYear:14 securityCode:123];
      [self mn_preformWithTimeout:120 asynchronousTest:^{
         [Legato tokenizeCard:card withBlock:^(NSDictionary *responseParams, NSError *error) {
             NSLog(@"%@ %@", responseParams, error);
             XCTAssertTrue(responseParams !=nil, @"Failed to create card.");
-			[self mn_finishRunningAsynchronousTest];
+            [self mn_finishRunningAsynchronousTest];
         }];
      }];
 }

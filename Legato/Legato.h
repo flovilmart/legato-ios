@@ -13,6 +13,10 @@ typedef void (^LegatoTokenizeResponseBlock)(NSDictionary *responseParams, NSErro
 
 @interface Legato : NSObject
 
-+(void) enableProduction;
+
 +(void) tokenizeCard:(LGCard *) card withBlock:(LegatoTokenizeResponseBlock) block;
+@end
+
+@interface Legato (deprecated)
++(void) enableProduction;
 @end

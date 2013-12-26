@@ -417,6 +417,7 @@
 				4A36C560186A066800783520 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A36C561186A066800783520 /* Build configuration list for PBXNativeTarget "LegatoTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +426,7 @@
 				4A36C563186A066800783520 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

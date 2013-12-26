@@ -7,7 +7,8 @@ Unofficial port from [Legato-js](https://www.beanstream.com/scripts/tokenization
 
 ## Installation
 
-- [Download the pre-built library](https://github.com/vfloz/legato-ios/releases/0.1).
+- [Download the pre-built
+  library](https://github.com/vfloz/legato-ios/releases/0.11).
 - Add libLegato.a to your project and to Build Phases -> Link Binary With Libraries.
 
 #### Headers
@@ -33,10 +34,6 @@ LGCard * card = [[LGCard alloc] initWithNumber:@"5100000010001004" expiryMonth:1
 
 
 if(card){
-	// By default Legato runs in the sandbox
-	/*
-		[Legato enableProduction];
-	*/
 	 [Legato tokenizeCard:card withBlock:^(NSDictionary *response, NSError *error) {
             NSString * token = response[@"data"][@"token"];
             // Use the token after

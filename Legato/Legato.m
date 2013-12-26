@@ -17,20 +17,11 @@ static Legato * _sharedInstance;
 -(void) setAPIURL:(NSString *) baseURL;
 @end
 @implementation Legato
-+ (NSString *)queryStringFromParameters:(NSDictionary *)params {
-    __block NSString *queryString = @"";
-    
-    [params enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        queryString = [queryString stringByAppendingFormat:@"&%@=%@", key, obj];
-    }];
-    
-    return queryString;
-}
 
 -(id) init{
     self = [super init];
     if (self) {
-        [self setAPIURL:@"https://payments.beanstream.com/scripts/tokenization/tokens"];
+        [self setAPIURL:@"https://www.beanstream.com/scripts/tokenization/tokens"];
     }
     return self;
 }
@@ -54,7 +45,6 @@ static Legato * _sharedInstance;
 +(void) tokenizeCard:(LGCard *)card withBlock:(LegatoTokenizeResponseBlock)block{
     NSURL *url = [Legato apiURL];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    __block NSHTTPURLResponse *response;
     NSDictionary *headers = [NSDictionary dictionaryWithObjectsAndKeys:
                              @"application/json", @"accept",
                              @"application/x-www-form-urlencoded charset=utf-8", @"Content-Type", nil];
@@ -64,7 +54,7 @@ static Legato * _sharedInstance;
     NSMutableDictionary *params = [@{
                              @"number":card.number,
                              @"expiry_month":card.expirationMonth,
-                             @"expiry_month":card.expirationYear,
+                             @"expiry_year":card.expirationYear,
                              @"cvd  ":card.securityCode
                              } mutableCopy];
     
@@ -84,20 +74,15 @@ static Legato * _sharedInstance;
     }
     [request setHTTPBody:jsonData];
     
-    __block NSError *tokenizeError;
-    __block NSData *responseData;
     
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    [queue addOperationWithBlock:^{
-        responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&tokenizeError];
-        
-
+    [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response, NSData *responseData, NSError *tokenizeError) {
         NSDictionary * structuredResponse = nil;
         if (tokenizeError == nil) {
             NSDictionary *responseJSON = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:&tokenizeError];
             structuredResponse = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                                responseJSON, @"data",
-                                                [NSString stringWithFormat:@"%ld", (long)[response statusCode]], @"status",
+                                  responseJSON, @"data",
+                                  [NSString stringWithFormat:@"%ld", (long)[(NSHTTPURLResponse *)response statusCode]], @"status",
                                   nil];
         }
         else {
@@ -109,11 +94,15 @@ static Legato * _sharedInstance;
     }];
 }
 
+-(void) setAPIURL:(NSString *)baseURL{
+    _apiURL = baseURL;
+}
+@end
+
+@implementation Legato (deprecated)
+
 +(void) enableProduction{
     [[Legato sharedInstance] setAPIURL:@"https://www.beanstream.com/scripts/tokenization/tokens"];
 }
 
--(void) setAPIURL:(NSString *)baseURL{
-    _apiURL = baseURL;
-}
 @end
