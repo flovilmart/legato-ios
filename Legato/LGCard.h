@@ -7,10 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
+typedef enum LGCardError{
+    LGCardErrorInvalidMonth,
+    LGCardErrorInvalidYear,
+    LGCardErrorInvalidCCV
+}LGCardError;
 @interface LGCard : NSObject
 
 -(id) initWithNumber:(NSString *) number expiryMonth:(NSInteger) expMonth expiryYear:(NSInteger) expYear securityCode:(NSInteger) securityCode;
+-(id) initWithNumber:(NSString *) number expiryMonth:(NSInteger) expMonth expiryYear:(NSInteger) expYear securityCode:(NSInteger) securityCode error:(NSError **) error;
 @property (readonly) NSString * number;
 @property (readonly) NSString * expirationMonth;
 @property (readonly) NSString * expirationYear;
